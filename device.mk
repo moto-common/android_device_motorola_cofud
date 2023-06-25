@@ -18,14 +18,11 @@ DEVICE_PATH := device/motorola/cofud/rootdir
 # Density
 TARGET_SCREEN_DENSITY := 420
 
-# Device Init
-PRODUCT_PACKAGES += \
-    fstab.qcom.ramdisk \
-    fstab.qcom
+# Model
+PRODUCT_MODEL := moto g(31)
 
-# Fingerprint
-TARGET_USES_FPC_FINGERPRINT := true
-TARGET_USES_EGISTEC_FINGERPRINT := true
+# NFC
+TARGET_USES_ST_NFC := true
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/mt6768-common/platform.mk)
